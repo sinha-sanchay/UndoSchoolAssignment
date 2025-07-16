@@ -27,18 +27,23 @@ This application allows users to search for educational courses with various fil
 git clone <repository-url>
 cd course-search-api
 ```
+### 2. Run Elasticsearch with Docker
 
-### 2. Install and Run Elasticsearch
+Make sure Docker is installed and running.
 
-If you don't have Elasticsearch running already:
+In your project folder (where `docker-compose.yml` is), run:
 
-1. Download Elasticsearch from [elastic.co](https://www.elastic.co/downloads/elasticsearch)
-2. Extract the archive and navigate to the Elasticsearch directory
-3. Run Elasticsearch:
-   ```bash
-   bin\elasticsearch.bat
-   ```
-4. Verify Elasticsearch is running by visiting http://localhost:9200 in your browser
+```bash
+docker-compose up -d
+```
+
+This starts Elasticsearch on `http://localhost:9200`.
+
+To check if it’s running, open a terminal and run:
+
+```bash
+curl http://localhost:9200
+```
 
 ### 3. Build and Run the Application
 
