@@ -237,10 +237,3 @@ curl -X GET "http://localhost:8080/api/search?category=Art&minAge=13&maxAge=19&s
 - **CourseSearchService**: Service implementing the search functionality
 - **CourseSearchController**: REST controller exposing the search API
 
-### Adding Custom Features
-
-To extend the application with additional features:
-
-1. Modify the CourseDocument class to add new fields
-2. Update the search implementation in CourseSearchService
-3. Add new parameters to the CourseSearchController as needed
