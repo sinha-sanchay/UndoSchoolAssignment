@@ -40,10 +40,10 @@ public class CourseIndexer {
             // Save all courses to Elasticsearch
             courseRepository.saveAll(courses);
 
-            System.out.println("✅ Successfully indexed " + courses.size() + " courses to Elasticsearch.");
+            System.out.println("Successfully indexed " + courses.size() + " courses to Elasticsearch.");
 
         } catch (Exception e) {
-            System.err.println("❌ Failed to index courses: " + e.getMessage());
+            System.err.println("Failed to index courses: " + e.getMessage());
         }
     }
 }
